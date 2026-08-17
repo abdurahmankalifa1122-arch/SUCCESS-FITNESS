@@ -1,0 +1,6 @@
+{
+  "name": "Success Fitness Center",
+  "description": "Premium masculine fitness website for Success Fitness Center located in Bole, Addis Ababa, Ethiopia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
