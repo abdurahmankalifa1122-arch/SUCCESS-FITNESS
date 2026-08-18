@@ -69,11 +69,11 @@ export const Gallery: React.FC = () => {
                   src={item.imageUrl}
                   alt={item.title}
                   containerClassName="w-full h-full"
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-85"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 brightness-105 contrast-105 saturate-105"
                 />
                 
-                {/* Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity" />
+                {/* Subtle overlay on hover for label contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
                 
                 {/* Zoom Icon indicator */}
                 <div className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#08090C]/80 backdrop-blur-md border border-white/10 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -88,7 +88,7 @@ export const Gallery: React.FC = () => {
                   <h3 className="font-heading text-base font-bold text-white uppercase leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-gray-400 mt-1 line-clamp-2">
+                  <p className="text-xs text-gray-300 mt-1 line-clamp-2">
                     {item.description}
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export const Gallery: React.FC = () => {
                   src={selectedImage.imageUrl}
                   alt={selectedImage.title}
                   containerClassName="w-full h-full max-h-[75vh]"
-                  className="w-full h-full max-h-[75vh] object-contain"
+                  className="w-full h-full max-h-[75vh] object-contain brightness-105 contrast-105"
                 />
               </div>
 

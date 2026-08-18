@@ -22,11 +22,12 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand & Slogan */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 flex items-center justify-center flex-shrink-0">
+              <div className="w-14 h-14 flex items-center justify-center flex-shrink-0">
                 <img
-                  src={BUSINESS_INFO.logoUrl || "./logo.png"}
+                  src={BUSINESS_INFO.logoUrl}
                   alt="Success Fitness Center Logo"
-                  className="w-full h-full object-contain filter drop-shadow"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-contain"
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     const fallback = e.currentTarget.parentElement?.querySelector('.footer-logo-fallback');

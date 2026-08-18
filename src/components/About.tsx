@@ -35,9 +35,9 @@ export const About: React.FC = () => {
                 src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=1000&q=80"
                 alt="Success Fitness Center Heavy Dumbbells"
                 containerClassName="w-full h-80 sm:h-96"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-75"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 brightness-105 contrast-105 saturate-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090A0F] via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090A0F]/80 via-transparent to-transparent" />
               
               <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-[#12141F]/90 backdrop-blur-md border border-white/10">
                 <p className="font-heading text-white text-base uppercase font-bold flex items-center gap-2">
@@ -69,7 +69,7 @@ export const About: React.FC = () => {
             </div>
 
             {/* Key Gym Pillars Checklist */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
               <div className="flex items-start gap-3 p-3.5 rounded-xl bg-[#12131C] border border-white/5">
                 <CheckCircle className="w-5 h-5 text-[#E5A93C] shrink-0 mt-0.5" />
                 <div>
@@ -91,14 +91,6 @@ export const About: React.FC = () => {
                 <div>
                   <h4 className="font-heading text-sm font-bold text-white uppercase">Dedicated Atmosphere</h4>
                   <p className="text-xs text-gray-400 mt-0.5">High-energy, focused environment free from distractions.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3 p-3.5 rounded-xl bg-[#12131C] border border-white/5">
-                <CheckCircle className="w-5 h-5 text-[#E5A93C] shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-heading text-sm font-bold text-white uppercase">Bole Prime Access</h4>
-                  <p className="text-xs text-gray-400 mt-0.5">Conveniently located for athletes across Addis Ababa.</p>
                 </div>
               </div>
             </div>

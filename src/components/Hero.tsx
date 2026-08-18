@@ -13,17 +13,17 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 overflow-hidden bg-[#08090C]">
-      {/* Background Gym Image with Dark Gradients */}
+      {/* Background Gym Image with Natural Exposure */}
       <div className="absolute inset-0 z-0">
         <SafeImage
           src={BUSINESS_INFO.heroImage}
           alt="Success Fitness Center Bole Addis Ababa Athlete Training"
           containerClassName="w-full h-full"
-          className="w-full h-full object-cover object-center brightness-40 filter contrast-125 scale-105"
+          className="w-full h-full object-cover object-center brightness-90 contrast-105 saturate-105 scale-105 transition-all duration-700"
         />
-        {/* Dark vignette overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/80 to-black/60" />
-        <div className="absolute inset-0 bg-radial-at-c from-transparent via-[#08090C]/60 to-[#08090C]" />
+        {/* Subtle dark gradient overlay for text readability without obscuring gym scene */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#08090C] via-[#08090C]/60 to-black/40" />
+        <div className="absolute inset-0 bg-radial-at-c from-transparent via-[#08090C]/40 to-[#08090C]" />
       </div>
 
       {/* Grid line accent overlay */}
@@ -32,12 +32,12 @@ export const Hero: React.FC = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
         {/* Brand Logo & Location Badge */}
         <div className="flex flex-col items-center justify-center gap-4 mb-6">
-          <div className="w-28 h-28 sm:w-36 sm:h-36 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+          <div className="w-32 h-32 sm:w-44 sm:h-44 flex items-center justify-center hover:scale-105 transition-transform duration-300">
             <img
-              src={BUSINESS_INFO.logoUrl || "./logo.png"}
+              src={BUSINESS_INFO.logoUrl}
               alt="Success Fitness Center Official Logo"
               referrerPolicy="no-referrer"
-              className="w-full h-full object-contain filter drop-shadow-[0_12px_30px_rgba(229,169,60,0.35)]"
+              className="w-full h-full object-contain"
             />
           </div>
 

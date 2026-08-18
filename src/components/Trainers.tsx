@@ -43,9 +43,9 @@ export const Trainers: React.FC = () => {
                     src={trainer.imageUrl}
                     alt={trainer.title}
                     containerClassName="w-full h-full"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-75"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 brightness-105 contrast-105 saturate-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#10121A] via-[#10121A]/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#10121A] via-[#10121A]/20 to-transparent" />
                   
                   {/* Badge */}
                   <div className="absolute top-3 left-3 px-3 py-1 rounded-md bg-[#08090C]/90 backdrop-blur-md border border-white/10 text-[11px] font-heading font-bold text-[#E5A93C] uppercase tracking-wider flex items-center gap-1.5">

@@ -54,8 +54,9 @@ export const Navbar: React.FC = () => {
           >
             <div className="relative w-[80px] h-[80px] flex items-center justify-center transition-transform group-hover:scale-105 flex-shrink-0">
               <img
-                src={BUSINESS_INFO.logoUrl || "./logo.png"}
+                src={BUSINESS_INFO.logoUrl}
                 alt="Success Fitness Center Logo"
+                referrerPolicy="no-referrer"
                 style={{ width: '80px', height: '80px' }}
                 className="w-[80px] h-[80px] object-contain drop-shadow-md"
                 onError={(e) => {
